@@ -116,6 +116,7 @@ img{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
   }
 
   .content-card{
@@ -123,6 +124,7 @@ img{
     box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
     overflow: hidden;
     height: 400px;
+    border-radius: 10px;;
   }
 
   .added-jobs{
@@ -141,4 +143,79 @@ img{
     padding: var(--espacios) 0;
   }
 
-  
+  @media screen and (max-width: 700px) {
+    .nav2{
+      color: #fff;
+    }
+
+    .icono{
+      display: block;
+      cursor: pointer;
+    }
+
+    .links{
+      position: fixed;
+      top: 80px;
+      left: 0;
+      height: 100%;
+      transition: 1s;
+      background: #2c3e50;
+      width: 0;
+      overflow: hidden;
+    }
+
+    .links a{
+      display: block;
+      width: 100%;
+      height: 50px;
+      padding: 20px;
+      text-align: center;
+      background: #34495e;
+      color: #fff;
+
+    }
+  }
+  .text2{
+    font-size: 30px;
+    text-align: left;
+  }
+  .text1{
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .btn-card{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+
+  .btn-card:hover{
+    background-color: aqua;
+
+
+  }
+  .search {
+    border-radius: 35px;
+    border-style: solid;
+    border-width: 0.5px;
+    height: 30px;
+    width: 100%;
+    padding: 15px;
+}
+
+input:focus {
+  outline: none !important;
+  border-radius: 35px;
+  border-color: #5632D2;
+  border-width: 2.5px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.473);
+  -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.473);
+  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.473);
+  -khtml-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.473);
+}
